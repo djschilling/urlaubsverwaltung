@@ -29,6 +29,7 @@
                              default-target-url="/web/overview" authentication-failure-url="/login?login_error=1"/>
         <security:logout logout-success-url="/login" logout-url="/logout"/>
         <security:csrf disabled="true"/>
+        <security:headers disabled="true"/>
     </security:http>
 
     <import resource="spring-security-${auth}.xml"/>
